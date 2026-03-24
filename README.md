@@ -1,57 +1,66 @@
-# 🗳 Mini Poll System
+#  Mini Poll System
 
-A full-stack mini poll application where users can create polls, vote, and view results as percentages.
-
----
-
-## 🚀 Features
-
-* Create poll with dynamic options
-* Vote for options
-* Real-time percentage-based results
-* Interactive UI with smooth user experience
-* SweetAlert popups for better UX
-* Reset functionality to start fresh
+This is a simple full-stack mini poll application that I built as part of an internship task. The idea was to create a system where users can create a poll, vote on options, and view results in percentage format.
 
 ---
 
-## 🛠 Tech Stack
+##  What this project does
 
-* Frontend: HTML, CSS, JavaScript
-* Backend: Node.js, Express
+* Allows users to create a poll with multiple options
+* Users can vote on any option
+* Displays results as percentages (not just vote counts)
+* Provides a clean and interactive UI
+* Includes reset functionality to start over
 
 ---
 
-## 📦 How to Run
+##  Technologies Used
+
+* **Frontend:** HTML, CSS, JavaScript
+* **Backend:** Node.js with Express
+
+---
+
+## Key Highlights
+
+One of the main requirements was to show results as percentages, so I implemented logic to calculate vote distribution dynamically.
+
+I also focused on improving user experience by:
+
+* Adding smooth UI styling
+* Using SweetAlert instead of default alerts
+* Managing frontend and backend state properly (especially for reset functionality)
+
+---
+
+##  How to run the project
 
 1. Install dependencies:
 
-   ```bash
+   ```
    npm install
    ```
 
-2. Start server:
+2. Start the backend server:
 
-   ```bash
+   ```
    node server.js
    ```
 
-3. Open:
+3. Open the frontend:
 
-   ```
-   index.html
-   ```
-
----
-
-## 💡 Highlights
-
-* Implemented percentage calculation logic for results
-* Managed frontend-backend state synchronization
-* Improved UX using modern UI design and alerts
+   * Simply open `index.html` in your browser
+   * (or use Live Server in VS Code)
 
 ---
 
-## 👨‍💻 Author
+##  Notes
+
+* This project uses in-memory storage, so data will reset when the server restarts
+* Designed to be simple, clean, and easy to understand
+
+---
+
+## Author
 
 Vamshi
