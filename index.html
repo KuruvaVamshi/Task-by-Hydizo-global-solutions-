@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mini Poll</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<style>
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 420px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.primary { background: #2575fc; color: white; }
+.add { background: #00c853; color: white; }
+.reset { background: #ff5252; color: white; }
+
+.option-btn {
+    background: #f1f5f9;
+    color: #333;
+}
+
+.option-btn:hover {
+    background: #2575fc;
+    color: white;
+}
+
+.bar {
+    background: #eee;
+    border-radius: 10px;
+    margin: 6px 0;
+}
+
+.fill {
+    height: 25px;
+    background: #2575fc;
+    color: white;
+    text-align: right;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h2>🗳 Mini Poll</h2>
+
+<div id="createSection">
+    <input id="question" placeholder="Enter your question">
+
+    <div id="optionsContainer">
+        <input class="opt" placeholder="Option 1">
+        <input class="opt" placeholder="Option 2">
+    </div>
+
+    <button class="add" onclick="addOption()">+ Add Option</button>
+    <button class="primary" onclick="createPoll()">Create Poll</button>
+</div>
+
+<hr>
+
+<h3 id="pollQ"></h3>
+<div id="voteOptions"></div>
+
+<button onclick="getResults()">Show Results</button>
+
+<div id="results"></div>
+
+<button class="reset" onclick="resetPoll()">Reset</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
